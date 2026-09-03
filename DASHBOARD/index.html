@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enoki Chamber Dashboard — Monitoring IoT</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+</head>
+<body>
+
+<header>
+    <h1><i class="ti ti-plant-2"></i> Enoki Chamber IoT Dashboard</h1>
+
+    <div class="header-right">
+        <span id="clock-display">--:--:--</span>
+
+        <div id="live-badge">
+            <div id="live-dot"></div>
+            LIVE
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <!-- Tab Mode -->
+    <div class="mode-tabs" id="mode-tabs">
+        <button class="mode-tab active" data-mode="all">Semua Fase</button>
+        <button class="mode-tab" data-mode="0">M1 Inkubasi</button>
+        <button class="mode-tab" data-mode="1">M2a Induksi</button>
+        <button class="mode-tab" data-mode="2">M2b Pemanjangan</button>
+        <button class="mode-tab" data-mode="3">M2c Fruiting</button>
+
+        <button class="btn primary" id="btn-next-phase" style="margin-left:auto">
+            <i class="ti ti-player-track-next"></i>
+            Ganti Fase Berikutnya
+        </button>
+    </div>
+
+    <!-- Notifikasi durasi fase -->
+    <div class="phase-notif" id="phase-notif" style="display:none"></div>
+    <div class="phase-progress-sub" id="phase-progress-text"></div>
+
+    <!-- Metric Card -->
+    <div class="metrics-grid">
+
+        <div class="metric-card">
+            <div class="metric-label">
+                <i class="ti ti-thermometer"></i>
+                Suhu Terkini
+            </div>
+            <div class="metric-value" id="m-temp">--°C</div>
+            <div class="metric-sub" id="m-temp-sub"></div>
+        </div>
+
+        <div class="metric-card">
+            <div class="metric-label">
+                <i class="ti ti-droplet"></i>
+                Kelembaban Terkini
+            </div>
+            <div class="metric-value" id="m-hum">--%</div>
+            <div class="metric-sub" id="m-hum-sub"></div>
+        </div>
+
+        <div class="metric-card">
+            <div class="metric-label">
+                <i class="ti ti-layers"></i>
+                Mode Aktif
+            </div>
+            <div class="metric-value" id="m-mode">--</div>
+            <div class="metric-sub" id="m-mode-sub"></div>
+        </div>
+
+        <div class="metric-card">
+            <div class="metric-label">
+                <i class="ti ti-clock"></i>
+                Jam Virtual
+            </div>
+            <div class="metric-value" id="m-vjam">--:00</div>
+            <div class="metric-sub" id="m-vjam-sub"></div>
+        </div>
+
+        <div class="metric-card">
+            <div class="metric-label">
+                <i class="ti ti-database"></i>
+                Total Data
+            </div>
+            <div class="metric-value" id="m-total">0</div>
+            <div class="metric-sub">rekaman tersimpan</div>
+        </div>
+
+    </div>
+
+    <!-- Aktuator -->
+    <div class="actuator-row">
+
+        <div class="actuator-badge off" id="b-peltier">
+            <i class="ti ti-snowflake"></i>
+            Peltier <span class="badge-pct">0%</span>
+        </div>
+
+        <div class="actuator-badge off" id="b-fanhs">
+            <i class="ti ti-fan"></i>
+            Fan Heatsink <span class="badge-pct">0%</span>
+        </div>
+
+        <div class="actuator-badge off" id="b-mist">
+            <i class="ti ti-droplets"></i>
+            Mist Maker
+        </div>
+
+        <div class="actuator-badge off" id="b-led">
+            <i class="ti ti-sun"></i>
+            LED Grow
+        </div>
+
+        <div class="actuator-badge off" id="b-fan">
+            <i class="ti ti-windmill"></i>
+            Fan Exhaust CO2
+        </div>
+
+    </div>
+
+    <!-- Grafik -->
+    <div class="charts-grid">
+
+        <div class="chart-card">
+            <h3>Suhu (°C)</h3>
+
+            <div style="height:200px">
+                <canvas id="chartTemp"></canvas>
+            </div>
+
+            <div class="setpoint-line" id="sp-temp"></div>
+        </div>
+
+        <div class="chart-card">
+            <h3>Kelembaban (%RH)</h3>
+
+            <div style="height:200px">
+                <canvas id="chartHum"></canvas>
+            </div>
+
+            <div class="setpoint-line" id="sp-hum"></div>
+        </div>
+
+    </div>
+
+    <!-- Grafik gabungan -->
+    <div class="chart-full">
+
+        <h3>Riwayat Suhu & Kelembaban</h3>
+
+        <div style="height:220px">
+            <canvas id="chartAll"></canvas>
+        </div>
+
+    </div>
+
+    <!-- Tombol -->
+    <div class="btn-group">
+
+        <button class="btn" id="btn-clear">
+            Hapus Semua
+        </button>
+
+        <button class="btn" id="btn-export-csv">
+            Export CSV
+        </button>
+
+        <button class="btn primary" id="btn-export-xlsx">
+            Export Excel
+        </button>
+
+    </div>
+
+    <br>
+
+    <!-- Filter -->
+    <select id="filter-mode">
+        <option value="all">Semua Mode</option>
+        <option value="M1 Inkubasi">M1 Inkubasi</option>
+        <option value="M2a Induksi">M2a Induksi</option>
+        <option value="M2b Pemanjangan">M2b Pemanjangan</option>
+        <option value="M2c Fruiting">M2c Fruiting</option>
+    </select>
+
+    <input
+        type="text"
+        id="search-time"
+        placeholder="Cari waktu..."
+    >
+
+    <br><br>
+
+    <!-- Tabel -->
+    <table id="data-table">
+
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Waktu</th>
+                <th>Jam Virtual</th>
+                <th>Mode</th>
+                <th>Suhu</th>
+                <th>Kelembaban</th>
+                <th>Peltier</th>
+                <th>Fan Heatsink</th>
+                <th>Mist</th>
+                <th>LED</th>
+                <th>Fan Exhaust</th>
+            </tr>
+        </thead>
+
+        <tbody id="table-body">
+            <tr>
+                <td colspan="11">
+                    Menunggu data pertama...
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <div id="table-footer"></div>
+
+</main>
+
+<footer>
+    Enoki Chamber IoT — Universitas Pembangunan Panca Budi ·
+    Rafiq Syarif Lasmana (2424210112)
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

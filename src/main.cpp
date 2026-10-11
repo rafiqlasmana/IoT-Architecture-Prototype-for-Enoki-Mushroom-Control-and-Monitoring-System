@@ -44,6 +44,8 @@
 #include <PubSubClient.h>
 #include <WiFi.h>
 #include <Fuzzy.h>
+#include "EnvInject.h"
+#include "ThermalModel.h"
 
 const char* WIFI_SSID     = "Wokwi-GUEST";
 const char* WIFI_PASSWORD = "";
@@ -217,6 +219,12 @@ void setup() {
   display.display();
   delay(1000);
 
+  #if ENV_TEST_MODE
+  envInjectBegin();
+#elif THERMAL_MODEL_MODE
+  thermalModelBegin();
+#endif  
+
   simStart = millis();
   phaseStartMillis = millis();
 
@@ -306,10 +314,23 @@ void loop() {
   handleButton(now);
 
   // Baca sensor setiap 2 detik (= 1 siklus kontrol)
-  if (now - lastSensor >= 2000) {
+    if (now - lastSensor >= 2000) {
     lastSensor = now;
-    float t = dht.readTemperature();
-    float h = dht.readHumidity();
+    float t, h;
+
+#if ENV_TEST_MODE
+    envInjectRead(t, h);
+#elif THERMAL_MODEL_MODE
+    // Thermal model perlu peltierOutput/mistOn TERBARU (dihitung di
+    // bawah), jadi di siklus ini pakai nilai temperature/humidity
+    // hasil hitungan siklus SEBELUMNYA dulu (sudah tersimpan di
+    // variabel global temperature/humidity).
+    t = temperature;
+    h = humidity;
+#else
+    t = dht.readTemperature();
+    h = dht.readHumidity();
+#endif
 
     if (!isnan(t) && !isnan(h)) {
       temperature = t;
@@ -322,8 +343,17 @@ void loop() {
     }
     controlActuators();
     checkPhaseTransition();
-  }
 
+#if THERMAL_MODEL_MODE
+    // Hitung suhu/RH BERIKUTNYA berdasarkan peltierOutput/fanHSOutput/
+    // mistOn yang BARU SAJA dihasilkan controlActuators() di atas ->
+    // inilah yang membuat loop tertutup (closed-loop simulasi).
+    // 2.0f diubah ke 20.0f untuk pengambilan sample lebih cepat 10x
+    thermalModelUpdate(peltierOutput, fanHSOutput, mistOn, 2.0f,
+                        temperature, humidity);
+#endif
+  }
+  
   // Update OLED setiap 500ms
   if (now - lastOLED >= 500) {
     lastOLED = now;
@@ -438,6 +468,15 @@ void checkPhaseTransition() {
 // ═════════════════════════════════════════════════════════
 float getSetpoint() {
   return (modes[currentMode].tempMax + modes[currentMode].tempMin) / 2.0;
+}
+
+// Jembatan untuk EnvInject.cpp — supaya modul itu bisa baca setpoint
+// mode yang SEDANG AKTIF tanpa perlu tahu enum Mode/struct ModeConfig.
+void getCurrentSetpoints(float &tMin, float &tMax, float &rMin, float &rMax) {
+  tMin = modes[currentMode].tempMin;
+  tMax = modes[currentMode].tempMax;
+  rMin = modes[currentMode].rhMin;
+  rMax = modes[currentMode].rhMax;
 }
 
 // ═════════════════════════════════════════════════════════

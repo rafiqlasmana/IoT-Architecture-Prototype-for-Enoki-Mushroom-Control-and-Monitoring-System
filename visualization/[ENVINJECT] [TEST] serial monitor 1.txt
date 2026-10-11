@@ -1,0 +1,136 @@
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1156
+load:0x40078000,len:11456
+ho 0 tail 12 room 4
+load:0x40080400,len:2972
+entry 0x400805dc
+Connecting WiFi.. OK
+MQTT...OK sbg enoki-esp32-c40a24
+[MQTT] Subscribe enoki/cmd/mode -> OK
+========================================
+>> MODE : M1 Inkubasi
+   Suhu : 20.00 – 23.00 C
+   Setpoint: 21.50
+   RH   : 60.00 – 70.00 %
+========================================
+[INFO] Siap. Tekan tombol untuk ganti mode.
+[T=21.6C H=65.8% | PLT=15% FHS=15% | dT=0.00 | MST=off LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=21.4C H=64.2% | PLT=23% FHS=30% | dT=0.00 | MST=off LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+========================================
+>> MODE : M2a Induksi
+   Suhu : 10.00 – 12.00 C
+   Setpoint: 11.00
+   RH   : 80.00 – 85.00 %
+========================================
+[MODE] -> M2a Induksi
+[T=10.9C H=82.6% | PLT=23% FHS=30% | dT=-3.55 | MST=off LED=off FAN=off | Jam=6 | Mode=M2a Induksi]
+[T=11.1C H=83.1% | PLT=29% FHS=39% | dT=-3.44 | MST=off LED=off FAN=off | Jam=6 | Mode=M2a Induksi]
+[T=10.9C H=81.6% | PLT=22% FHS=30% | dT=-0.02 | MST=off LED=off FAN=off | Jam=6 | Mode=M2a Induksi]
+[T=10.8C H=82.0% | PLT=20% FHS=30% | dT=-0.11 | MST=off LED=off FAN=off | Jam=6 | Mode=M2a Induksi]
+[T=11.0C H=82.9% | PLT=29% FHS=46% | dT=0.03 | MST=off LED=off FAN=off | Jam=6 | Mode=M2a Induksi]
+========================================
+>> MODE : M2b Pemanjangan
+   Suhu : 12.00 – 15.00 C
+   Setpoint: 13.50
+   RH   : 75.00 – 80.00 %
+========================================
+[MODE] -> M2b Pemanjangan
+[T=13.3C H=77.2% | PLT=42% FHS=61% | dT=0.83 | MST=off LED=off FAN=ON | Jam=6 | Mode=M2b Pemanjangan]
+[T=13.5C H=77.0% | PLT=48% FHS=90% | dT=0.83 | MST=off LED=off FAN=ON | Jam=6 | Mode=M2b Pemanjangan]
+[T=13.6C H=77.5% | PLT=43% FHS=75% | dT=0.12 | MST=off LED=off FAN=ON | Jam=6 | Mode=M2b Pemanjangan]
+[T=13.6C H=77.8% | PLT=38% FHS=61% | dT=0.05 | MST=off LED=off FAN=ON | Jam=6 | Mode=M2b Pemanjangan]
+[T=13.7C H=78.5% | PLT=40% FHS=63% | dT=0.03 | MST=off LED=off FAN=ON | Jam=6 | Mode=M2b Pemanjangan]
+========================================
+>> MODE : M2c Fruiting
+   Suhu : 8.00 – 12.00 C
+   Setpoint: 10.00
+   RH   : 80.00 – 90.00 %
+========================================
+[MODE] -> M2c Fruiting
+[T=10.1C H=85.3% | PLT=28% FHS=38% | dT=-1.18 | MST=off LED=ON FAN=off | Jam=6 | Mode=M2c Fruiting]
+[T=10.1C H=85.0% | PLT=27% FHS=37% | dT=-1.21 | MST=off LED=ON FAN=off | Jam=6 | Mode=M2c Fruiting]
+[T=10.2C H=84.1% | PLT=35% FHS=45% | dT=0.04 | MST=off LED=ON FAN=off | Jam=6 | Mode=M2c Fruiting]
+[T=9.8C H=85.4% | PLT=21% FHS=30% | dT=-0.09 | MST=off LED=ON FAN=off | Jam=6 | Mode=M2c Fruiting]
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1156
+load:0x40078000,len:11456
+ho 0 tail 12 room 4
+load:0x40080400,len:2972
+entry 0x400805dc
+Connecting WiFi.. OK
+MQTT...OK sbg enoki-esp32-c40a24
+[MQTT] Subscribe enoki/cmd/mode -> OK
+========================================
+>> MODE : M1 Inkubasi
+   Suhu : 20.00 – 23.00 C
+   Setpoint: 21.50
+   RH   : 60.00 – 70.00 %
+========================================
+[INFO] Siap. Tekan tombol untuk ganti mode.
+[T=21.6C H=65.8% | PLT=15% FHS=15% | dT=0.00 | MST=off LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=21.4C H=64.2% | PLT=23% FHS=30% | dT=0.00 | MST=off LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=21.4C H=65.1% | PLT=23% FHS=30% | dT=-0.05 | MST=off LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=21.6C H=65.6% | PLT=37% FHS=45% | dT=0.06 | MST=off LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=21.4C H=64.1% | PLT=22% FHS=30% | dT=-0.02 | MST=off LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=21.3C H=64.5% | PLT=20% FHS=30% | dT=-0.11 | MST=off LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=21.5C H=65.4% | PLT=29% FHS=46% | dT=0.03 | MST=off LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=21.3C H=64.7% | PLT=21% FHS=31% | dT=-0.01 | MST=off LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=21.5C H=64.5% | PLT=24% FHS=30% | dT=0.00 | MST=off LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=21.6C H=65.0% | PLT=39% FHS=45% | dT=0.12 | MST=off LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+========================================
+>> MODE : M2a Induksi
+   Suhu : 10.00 – 12.00 C
+   Setpoint: 11.00
+   RH   : 80.00 – 85.00 %
+========================================
+[MODE] -> M2a Induksi
+[T=11.1C H=82.8% | PLT=30% FHS=41% | dT=-3.45 | MST=off LED=off FAN=off | Jam=6 | Mode=M2a Induksi]
+[T=11.2C H=83.5% | PLT=32% FHS=44% | dT=-3.47 | MST=off LED=off FAN=off | Jam=6 | Mode=M2a Induksi]
+[T=11.1C H=82.8% | PLT=32% FHS=45% | dT=-0.02 | MST=off LED=off FAN=off | Jam=6 | Mode=M2a Induksi]
+[T=11.1C H=82.5% | PLT=32% FHS=44% | dT=-0.05 | MST=off LED=off FAN=off | Jam=6 | Mode=M2a Induksi]
+[T=11.2C H=81.6% | PLT=35% FHS=45% | dT=0.04 | MST=off LED=off FAN=off | Jam=6 | Mode=M2a Induksi]
+[T=10.8C H=82.9% | PLT=21% FHS=30% | dT=-0.09 | MST=off LED=off FAN=off | Jam=6 | Mode=M2a Induksi]
+[T=11.1C H=82.5% | PLT=37% FHS=51% | dT=-0.02 | MST=off LED=off FAN=off | Jam=6 | Mode=M2a Induksi]
+[T=11.1C H=82.7% | PLT=39% FHS=66% | dT=0.10 | MST=off LED=off FAN=off | Jam=6 | Mode=M2a Induksi]
+[T=11.1C H=83.2% | PLT=33% FHS=45% | dT=-0.02 | MST=off LED=off FAN=off | Jam=6 | Mode=M2a Induksi]
+[T=10.9C H=81.8% | PLT=23% FHS=30% | dT=-0.06 | MST=off LED=off FAN=off | Jam=6 | Mode=M2a Induksi]
+========================================
+>> MODE : M2b Pemanjangan
+   Suhu : 12.00 – 15.00 C
+   Setpoint: 13.50
+   RH   : 75.00 – 80.00 %
+========================================
+[MODE] -> M2b Pemanjangan
+[T=13.4C H=77.8% | PLT=45% FHS=60% | dT=0.77 | MST=off LED=off FAN=ON | Jam=7 | Mode=M2b Pemanjangan]
+[T=13.4C H=77.1% | PLT=45% FHS=75% | dT=0.82 | MST=off LED=off FAN=ON | Jam=7 | Mode=M2b Pemanjangan]
+[T=13.5C H=76.9% | PLT=28% FHS=46% | dT=0.03 | MST=off LED=off FAN=ON | Jam=7 | Mode=M2b Pemanjangan]
+[T=13.7C H=76.7% | PLT=43% FHS=61% | dT=0.13 | MST=off LED=off FAN=ON | Jam=7 | Mode=M2b Pemanjangan]
+[T=13.4C H=76.9% | PLT=22% FHS=31% | dT=-0.03 | MST=off LED=off FAN=ON | Jam=7 | Mode=M2b Pemanjangan]
+[T=13.2C H=77.7% | PLT=20% FHS=30% | dT=-0.17 | MST=off LED=off FAN=ON | Jam=7 | Mode=M2b Pemanjangan]
+========================================
+>> MODE : M2c Fruiting
+   Suhu : 8.00 – 12.00 C
+   Setpoint: 10.00
+   RH   : 80.00 – 90.00 %
+========================================
+[MODE] -> M2c Fruiting
+[T=9.9C H=85.7% | PLT=23% FHS=30% | dT=-1.15 | MST=off LED=ON FAN=off | Jam=7 | Mode=M2c Fruiting]
+[T=10.2C H=84.7% | PLT=31% FHS=44% | dT=-1.01 | MST=off LED=ON FAN=off | Jam=7 | Mode=M2c Fruiting]
+[T=9.8C H=84.6% | PLT=21% FHS=30% | dT=-0.05 | MST=off LED=ON FAN=off | Jam=7 | Mode=M2c Fruiting]
+[T=10.0C H=84.2% | PLT=25% FHS=30% | dT=-0.06 | MST=off LED=ON FAN=off | Jam=7 | Mode=M2c Fruiting]
+[T=10.2C H=84.7% | PLT=45% FHS=60% | dT=0.13 | MST=off LED=ON FAN=off | Jam=7 | Mode=M2c Fruiting]
+[T=10.2C H=85.0% | PLT=44% FHS=71% | dT=0.08 | MST=off LED=ON FAN=off | Jam=7 | Mode=M2c Fruiting]
+[T=10.2C H=84.4% | PLT=40% FHS=63% | dT=0.02 | MST=off LED=ON FAN=off | Jam=7 | Mode=M2c Fruiting]
+[T=10.0C H=84.6% | PLT=25% FHS=48% | dT=-0.09 | MST=off LED=ON FAN=off | Jam=7 | Mode=M2c Fruiting]
+[T=10.3C H=84.1% | PLT=36% FHS=48% | dT=0.01 | MST=off LED=ON FAN=off | Jam=7 | Mode=M2c Fruiting]
+[T=9.9C H=84.8% | PLT=23% FHS=33% | dT=-0.02 | MST=off LED=ON FAN=off | Jam=7 | Mode=M2c Fruiting]
+[T=9.7C H=84.2% | PLT=20% FHS=33% | dT=-0.17 | MST=off LED=ON FAN=off | Jam=7 | Mode=M2c Fruiting]
+[T=10.2C H=85.4% | PLT=35% FHS=48% | dT=0.08 | MST=off LED=ON FAN=off | Jam=7 | Mode=M2c Fruiting]

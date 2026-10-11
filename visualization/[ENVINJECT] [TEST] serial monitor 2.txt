@@ -1,0 +1,185 @@
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1156
+load:0x40078000,len:11456
+ho 0 tail 12 room 4
+load:0x40080400,len:2972
+entry 0x400805dc
+Connecting WiFiets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1156
+load:0x40078000,len:11456
+ho 0 tail 12 room 4
+load:0x40080400,len:2972
+entry 0x400805dc
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1156
+load:0x40078000,len:11456
+ho 0 tail 12 room 4
+load:0x40080400,len:2972
+entry 0x400805dc
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1156
+load:0x40078000,len:11456
+ho 0 tail 12 room 4
+load:0x40080400,len:2972
+entry 0x400805dc
+Connecting WiFi.. OK
+MQTT...fail rc=-4
+MQTT...OK sbg enoki-esp32-c40a24
+[MQTT] Subscribe enoki/cmd/mode -> OK
+========================================
+>> MODE : M1 Inkubasi
+   Suhu : 20.00 – 23.00 C
+   Setpoint: 21.50
+   RH   : 60.00 – 70.00 %
+========================================
+[INFO] Siap. Tekan tombol untuk ganti mode.
+[T=21.6C H=65.8% | PLT=15% FHS=15% | dT=0.00 | MST=off LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=21.4C H=64.2% | PLT=23% FHS=30% | dT=0.00 | MST=off LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=21.4C H=65.1% | PLT=23% FHS=30% | dT=-0.05 | MST=off LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=21.6C H=65.6% | PLT=37% FHS=45% | dT=0.06 | MST=off LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=21.4C H=64.1% | PLT=22% FHS=30% | dT=-0.02 | MST=off LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=21.3C H=64.5% | PLT=20% FHS=30% | dT=-0.11 | MST=off LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=21.5C H=65.4% | PLT=29% FHS=46% | dT=0.03 | MST=off LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=21.3C H=64.7% | PLT=21% FHS=31% | dT=-0.01 | MST=off LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=21.5C H=64.5% | PLT=24% FHS=30% | dT=0.00 | MST=off LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=21.6C H=65.0% | PLT=39% FHS=45% | dT=0.12 | MST=off LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=21.6C H=65.3% | PLT=38% FHS=45% | dT=0.05 | MST=off LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=21.7C H=66.0% | PLT=40% FHS=60% | dT=0.03 | MST=off LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=21.6C H=65.3% | PLT=32% FHS=55% | dT=-0.02 | MST=off LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=21.6C H=65.0% | PLT=32% FHS=44% | dT=-0.05 | MST=off LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=21.7C H=64.1% | PLT=35% FHS=45% | dT=0.04 | MST=off LED=off FAN=off | Jam=7 | Mode=M1 Inkubasi]
+[T=21.3C H=65.4% | PLT=21% FHS=30% | dT=-0.09 | MST=off LED=off FAN=off | Jam=7 | Mode=M1 Inkubasi]
+[T=21.6C H=65.0% | PLT=37% FHS=51% | dT=-0.02 | MST=off LED=off FAN=off | Jam=7 | Mode=M1 Inkubasi]
+[T=21.6C H=65.2% | PLT=39% FHS=66% | dT=0.10 | MST=off LED=off FAN=off | Jam=7 | Mode=M1 Inkubasi]
+[T=21.6C H=65.7% | PLT=33% FHS=45% | dT=-0.02 | MST=off LED=off FAN=off | Jam=7 | Mode=M1 Inkubasi]
+[T=21.4C H=64.3% | PLT=23% FHS=30% | dT=-0.06 | MST=off LED=off FAN=off | Jam=7 | Mode=M1 Inkubasi]
+[T=21.4C H=65.3% | PLT=23% FHS=30% | dT=-0.07 | MST=off LED=off FAN=off | Jam=7 | Mode=M1 Inkubasi]
+[T=21.4C H=64.6% | PLT=22% FHS=30% | dT=-0.01 | MST=off LED=off FAN=off | Jam=7 | Mode=M1 Inkubasi]
+[T=21.5C H=64.4% | PLT=28% FHS=45% | dT=0.03 | MST=off LED=off FAN=off | Jam=7 | Mode=M1 Inkubasi]
+[T=21.7C H=64.2% | PLT=43% FHS=60% | dT=0.13 | MST=off LED=off FAN=off | Jam=7 | Mode=M1 Inkubasi]
+[T=21.4C H=64.4% | PLT=22% FHS=30% | dT=-0.03 | MST=off LED=off FAN=off | Jam=7 | Mode=M1 Inkubasi]
+[T=21.2C H=65.2% | PLT=20% FHS=30% | dT=-0.17 | MST=off LED=off FAN=off | Jam=7 | Mode=M1 Inkubasi]
+[T=21.4C H=65.7% | PLT=26% FHS=36% | dT=0.02 | MST=off LED=off FAN=off | Jam=7 | Mode=M1 Inkubasi]
+[T=21.7C H=64.7% | PLT=41% FHS=51% | dT=0.15 | MST=off LED=off FAN=off | Jam=7 | Mode=M1 Inkubasi]
+[T=21.3C H=64.6% | PLT=21% FHS=30% | dT=-0.05 | MST=off LED=off FAN=off | Jam=7 | Mode=M1 Inkubasi]
+[T=21.5C H=64.2% | PLT=25% FHS=30% | dT=-0.06 | MST=off LED=off FAN=off | Jam=7 | Mode=M1 Inkubasi]
+[T=21.7C H=64.7% | PLT=45% FHS=60% | dT=0.13 | MST=off LED=off FAN=off | Jam=7 | Mode=M1 Inkubasi]
+[T=21.7C H=65.0% | PLT=44% FHS=71% | dT=0.08 | MST=off LED=off FAN=off | Jam=7 | Mode=M1 Inkubasi]
+[T=21.7C H=64.4% | PLT=40% FHS=63% | dT=0.02 | MST=off LED=off FAN=off | Jam=7 | Mode=M1 Inkubasi]
+[T=21.5C H=64.6% | PLT=25% FHS=48% | dT=-0.09 | MST=off LED=off FAN=off | Jam=7 | Mode=M1 Inkubasi]
+[INFO] Durasi minimum fase tercapai -> siap dipindah manual.
+[T=21.8C H=64.1% | PLT=36% FHS=48% | dT=0.01 | MST=off LED=off FAN=off | Jam=8 | Mode=M1 Inkubasi]
+[T=21.4C H=64.8% | PLT=23% FHS=33% | dT=-0.02 | MST=off LED=off FAN=off | Jam=8 | Mode=M1 Inkubasi]
+[T=21.2C H=64.2% | PLT=20% FHS=33% | dT=-0.17 | MST=off LED=off FAN=off | Jam=8 | Mode=M1 Inkubasi]
+[T=21.7C H=65.4% | PLT=35% FHS=48% | dT=0.08 | MST=off LED=off FAN=off | Jam=8 | Mode=M1 Inkubasi]
+[T=21.3C H=65.8% | PLT=23% FHS=33% | dT=0.02 | MST=off LED=off FAN=off | Jam=8 | Mode=M1 Inkubasi]
+[T=21.7C H=64.3% | PLT=38% FHS=48% | dT=0.01 | MST=off LED=off FAN=off | Jam=8 | Mode=M1 Inkubasi]
+[T=21.5C H=64.4% | PLT=37% FHS=48% | dT=0.09 | MST=off LED=off FAN=off | Jam=8 | Mode=M1 Inkubasi]
+[T=21.4C H=64.7% | PLT=22% FHS=33% | dT=-0.10 | MST=off LED=off FAN=off | Jam=8 | Mode=M1 Inkubasi]
+[T=21.3C H=66.0% | PLT=20% FHS=30% | dT=-0.10 | MST=off LED=off FAN=off | Jam=8 | Mode=M1 Inkubasi]
+[T=21.3C H=64.8% | PLT=21% FHS=30% | dT=-0.04 | MST=off LED=off FAN=off | Jam=8 | Mode=M1 Inkubasi]
+[AUTO] Durasi maksimum fase tercapai -> pindah otomatis.
+========================================
+>> MODE : M2a Induksi
+   Suhu : 10.00 – 12.00 C
+   Setpoint: 11.00
+   RH   : 80.00 – 85.00 %
+========================================
+[MODE] -> M2a Induksi
+[T=11.1C H=81.7% | PLT=28% FHS=38% | dT=-3.39 | MST=off LED=off FAN=off | Jam=8 | Mode=M2a Induksi]
+[T=11.2C H=83.0% | PLT=31% FHS=43% | dT=-3.37 | MST=off LED=off FAN=off | Jam=8 | Mode=M2a Induksi]
+[T=11.0C H=82.0% | PLT=24% FHS=30% | dT=-0.04 | MST=off LED=off FAN=off | Jam=8 | Mode=M2a Induksi]
+[T=11.3C H=81.6% | PLT=39% FHS=45% | dT=0.03 | MST=off LED=off FAN=off | Jam=8 | Mode=M2a Induksi]
+[T=10.8C H=83.4% | PLT=21% FHS=30% | dT=-0.06 | MST=off LED=off FAN=off | Jam=8 | Mode=M2a Induksi]
+[T=11.2C H=81.7% | PLT=36% FHS=45% | dT=-0.04 | MST=off LED=off FAN=off | Jam=8 | Mode=M2a Induksi]
+[T=10.9C H=83.0% | PLT=30% FHS=51% | dT=0.06 | MST=off LED=off FAN=off | Jam=8 | Mode=M2a Induksi]
+[T=11.3C H=83.1% | PLT=43% FHS=66% | dT=0.04 | MST=off LED=off FAN=off | Jam=8 | Mode=M2a Induksi]
+[T=11.0C H=81.8% | PLT=27% FHS=42% | dT=0.02 | MST=off LED=off FAN=off | Jam=8 | Mode=M2a Induksi]
+[T=10.9C H=81.7% | PLT=22% FHS=30% | dT=-0.14 | MST=off LED=off FAN=off | Jam=8 | Mode=M2a Induksi]
+[T=10.8C H=81.9% | PLT=22% FHS=30% | dT=-0.06 | MST=off LED=off FAN=off | Jam=9 | Mode=M2a Induksi]
+[T=10.9C H=82.3% | PLT=22% FHS=30% | dT=-0.00 | MST=off LED=off FAN=off | Jam=9 | Mode=M2a Induksi]
+[T=11.0C H=83.2% | PLT=34% FHS=57% | dT=0.07 | MST=off LED=off FAN=off | Jam=9 | Mode=M2a Induksi]
+[T=11.3C H=82.2% | PLT=49% FHS=72% | dT=0.14 | MST=off LED=off FAN=off | Jam=9 | Mode=M2a Induksi]
+[T=11.3C H=83.2% | PLT=44% FHS=70% | dT=0.08 | MST=off LED=off FAN=off | Jam=9 | Mode=M2a Induksi]
+[T=11.1C H=81.8% | PLT=33% FHS=55% | dT=-0.08 | MST=off LED=off FAN=off | Jam=9 | Mode=M2a Induksi]
+[T=11.0C H=83.4% | PLT=25% FHS=30% | dT=-0.09 | MST=off LED=off FAN=off | Jam=9 | Mode=M2a Induksi]
+[T=10.8C H=81.6% | PLT=21% FHS=30% | dT=-0.08 | MST=off LED=off FAN=off | Jam=9 | Mode=M2a Induksi]
+[T=11.3C H=83.4% | PLT=45% FHS=60% | dT=0.09 | MST=off LED=off FAN=off | Jam=9 | Mode=M2a Induksi]
+[T=10.9C H=82.4% | PLT=30% FHS=45% | dT=0.02 | MST=off LED=off FAN=off | Jam=9 | Mode=M2a Induksi]
+[INFO] Durasi minimum fase tercapai -> siap dipindah manual.
+[T=10.9C H=82.8% | PLT=23% FHS=35% | dT=-0.11 | MST=off LED=off FAN=off | Jam=9 | Mode=M2a Induksi]
+[T=11.1C H=81.7% | PLT=37% FHS=50% | dT=0.06 | MST=off LED=off FAN=off | Jam=9 | Mode=M2a Induksi]
+[T=10.8C H=82.2% | PLT=21% FHS=30% | dT=-0.04 | MST=off LED=off FAN=off | Jam=9 | Mode=M2a Induksi]
+[T=11.0C H=83.2% | PLT=25% FHS=30% | dT=-0.02 | MST=off LED=off FAN=off | Jam=9 | Mode=M2a Induksi]
+[T=11.1C H=83.2% | PLT=41% FHS=57% | dT=0.10 | MST=off LED=off FAN=off | Jam=9 | Mode=M2a Induksi]
+[T=11.2C H=81.6% | PLT=40% FHS=68% | dT=0.06 | MST=off LED=off FAN=off | Jam=9 | Mode=M2a Induksi]
+[T=10.7C H=82.6% | PLT=19% FHS=38% | dT=-0.12 | MST=off LED=off FAN=off | Jam=9 | Mode=M2a Induksi]
+[T=10.7C H=83.3% | PLT=19% FHS=30% | dT=-0.15 | MST=off LED=off FAN=off | Jam=9 | Mode=M2a Induksi]
+[AUTO] Durasi maksimum fase tercapai -> pindah otomatis.
+========================================
+>> MODE : M2b Pemanjangan
+   Suhu : 12.00 – 15.00 C
+   Setpoint: 13.50
+   RH   : 75.00 – 80.00 %
+========================================
+[MODE] -> M2b Pemanjangan
+[T=13.6C H=77.4% | PLT=46% FHS=60% | dT=0.94 | MST=off LED=off FAN=ON | Jam=9 | Mode=M2b Pemanjangan]
+[T=13.6C H=76.5% | PLT=55% FHS=75% | dT=0.97 | MST=off LED=off FAN=ON | Jam=9 | Mode=M2b Pemanjangan]
+[T=13.4C H=77.8% | PLT=43% FHS=75% | dT=-0.06 | MST=off LED=off FAN=ON | Jam=10 | Mode=M2b Pemanjangan]
+[T=13.2C H=77.7% | PLT=28% FHS=60% | dT=-0.14 | MST=off LED=off FAN=ON | Jam=10 | Mode=M2b Pemanjangan]
+[T=13.7C H=77.8% | PLT=40% FHS=60% | dT=0.10 | MST=off LED=off FAN=ON | Jam=10 | Mode=M2b Pemanjangan]
+[T=13.6C H=77.9% | PLT=40% FHS=72% | dT=0.11 | MST=off LED=off FAN=ON | Jam=10 | Mode=M2b Pemanjangan]
+[INFO] Durasi minimum fase tercapai -> siap dipindah manual.
+[T=13.3C H=78.3% | PLT=20% FHS=42% | dT=-0.14 | MST=off LED=off FAN=ON | Jam=10 | Mode=M2b Pemanjangan]
+[T=13.4C H=76.6% | PLT=23% FHS=30% | dT=-0.05 | MST=off LED=off FAN=ON | Jam=10 | Mode=M2b Pemanjangan]
+[T=13.5C H=77.1% | PLT=33% FHS=56% | dT=0.07 | MST=off LED=off FAN=ON | Jam=10 | Mode=M2b Pemanjangan]
+[T=13.4C H=77.5% | PLT=24% FHS=41% | dT=0.00 | MST=off LED=off FAN=ON | Jam=10 | Mode=M2b Pemanjangan]
+[AUTO] Durasi maksimum fase tercapai -> pindah otomatis.
+========================================
+>> MODE : M2c Fruiting
+   Suhu : 8.00 – 12.00 C
+   Setpoint: 10.00
+   RH   : 80.00 – 90.00 %
+========================================
+[MODE] -> M2c Fruiting
+[T=13.5C H=77.5% | PLT=24% FHS=33% | dT=-0.02 | MST=off LED=off FAN=off | Jam=10 | Mode=M2c Fruiting]
+[T=9.9C H=84.7% | PLT=22% FHS=30% | dT=-1.18 | MST=off LED=ON FAN=off | Jam=10 | Mode=M2c Fruiting]
+[T=10.0C H=84.7% | PLT=24% FHS=30% | dT=-1.16 | MST=off LED=ON FAN=off | Jam=10 | Mode=M2c Fruiting]
+[T=10.2C H=85.4% | PLT=39% FHS=45% | dT=0.11 | MST=off LED=ON FAN=off | Jam=10 | Mode=M2c Fruiting]
+[T=10.2C H=85.6% | PLT=44% FHS=61% | dT=0.09 | MST=off LED=ON FAN=off | Jam=10 | Mode=M2c Fruiting]
+[T=10.1C H=84.4% | PLT=36% FHS=49% | dT=-0.03 | MST=off LED=ON FAN=off | Jam=10 | Mode=M2c Fruiting]
+[T=9.8C H=84.8% | PLT=21% FHS=33% | dT=-0.13 | MST=off LED=ON FAN=off | Jam=10 | Mode=M2c Fruiting]
+[T=10.0C H=85.7% | PLT=24% FHS=30% | dT=-0.05 | MST=off LED=ON FAN=off | Jam=10 | Mode=M2c Fruiting]
+[T=10.2C H=84.7% | PLT=39% FHS=45% | dT=0.12 | MST=off LED=ON FAN=off | Jam=10 | Mode=M2c Fruiting]
+[T=10.0C H=85.4% | PLT=33% FHS=50% | dT=0.03 | MST=off LED=ON FAN=off | Jam=10 | Mode=M2c Fruiting]
+[T=10.1C H=84.2% | PLT=33% FHS=45% | dT=-0.04 | MST=off LED=ON FAN=off | Jam=10 | Mode=M2c Fruiting]
+[T=10.2C H=84.4% | PLT=40% FHS=60% | dT=0.05 | MST=off LED=ON FAN=off | Jam=10 | Mode=M2c Fruiting]
+[T=9.7C H=85.0% | PLT=19% FHS=30% | dT=-0.11 | MST=off LED=ON FAN=off | Jam=11 | Mode=M2c Fruiting]
+[T=10.2C H=85.1% | PLT=34% FHS=45% | dT=-0.00 | MST=off LED=ON FAN=off | Jam=11 | Mode=M2c Fruiting]
+[T=9.7C H=85.9% | PLT=20% FHS=30% | dT=-0.00 | MST=off LED=ON FAN=off | Jam=11 | Mode=M2c Fruiting]
+[T=10.2C H=84.3% | PLT=35% FHS=45% | dT=0.02 | MST=off LED=ON FAN=off | Jam=11 | Mode=M2c Fruiting]
+[INFO] Durasi minimum fase tercapai -> siap dipindah manual.
+[T=9.7C H=85.3% | PLT=35% FHS=45% | dT=0.01 | MST=off LED=ON FAN=off | Jam=11 | Mode=M2c Fruiting]
+[T=9.9C H=84.4% | PLT=21% FHS=30% | dT=-0.12 | MST=off LED=ON FAN=off | Jam=11 | Mode=M2c Fruiting]
+[T=10.0C H=84.7% | PLT=33% FHS=45% | dT=0.08 | MST=off LED=ON FAN=off | Jam=11 | Mode=M2c Fruiting]
+[T=9.9C H=85.7% | PLT=23% FHS=31% | dT=0.00 | MST=off LED=ON FAN=off | Jam=11 | Mode=M2c Fruiting]
+[T=10.1C H=85.4% | PLT=35% FHS=53% | dT=0.03 | MST=off LED=ON FAN=off | Jam=11 | Mode=M2c Fruiting]
+[T=10.1C H=85.0% | PLT=41% FHS=68% | dT=0.09 | MST=off LED=ON FAN=off | Jam=11 | Mode=M2c Fruiting]

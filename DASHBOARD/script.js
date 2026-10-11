@@ -25,6 +25,7 @@ let simStartMs = Date.now();
 let startHour = 6;
 let chartMode = "all";
 let currentPage = 1;
+let lastLogTime = 0;
 const ROWS_PER_PAGE = 10;
 
 function getVirtualHour() {
@@ -335,10 +336,11 @@ function renderTable() {
     return true;
   });
 
-  let selectedMode = chartMode === 'all' ? null : parseInt(chartMode);
-  if (selectedMode !== null) {
-    filtered = filtered.filter(r => r.modeIdx === selectedMode);
-  }
+  // (filter otomatis berdasarkan chartMode DIHAPUS DI SINI — sebelumnya
+  // tabel ikut ter-filter ke fase yang sedang aktif setiap kali fase
+  // berganti (lewat syncModeTabsUI()), sehingga tabel kelihatan kosong
+  // padahal data fase sebelumnya masih ada di logData. Sekarang tabel
+  // hanya difilter oleh dropdown "filter-mode" yang dikontrol user.)
 
   const tbody = document.getElementById('table-body');
   if (filtered.length === 0) {
@@ -590,6 +592,10 @@ mqttClient.on("message", (topic, message) => {
   }
 
   if (mqttData.temp !== null && mqttData.hum !== null) {
+   const now = Date.now();
+    if (now - lastLogTime < 1000) return;  
+    lastLogTime = now;
+   
     simRunning = false; // data real pertama sudah masuk, hentikan simulasi lokal
     const entry = {
       time: now_str(), datetime: now_date_str(),

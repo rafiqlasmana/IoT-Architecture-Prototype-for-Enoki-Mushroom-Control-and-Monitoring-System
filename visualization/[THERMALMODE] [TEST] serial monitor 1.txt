@@ -1,0 +1,283 @@
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1156
+load:0x40078000,len:11456
+ho 0 tail 12 room 4
+load:0x40080400,len:2972
+entry 0x400805dc
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1156
+load:0x40078000,len:11456
+ho 0 tail 12 room 4
+load:0x40080400,len:2972
+entry 0x400805dc
+Connecting WiFi.. OK
+MQTT...OK sbg enoki-esp32-c40a24
+[MQTT] Subscribe enoki/cmd/mode -> OK
+========================================
+>> MODE : M1 Inkubasi
+   Suhu : 20.00 – 23.00 C
+   Setpoint: 21.50
+   RH   : 60.00 – 70.00 %
+========================================
+[INFO] Siap. Tekan tombol untuk ganti mode.
+[T=28.0C H=65.3% | PLT=2% FHS=15% | dT=0.00 | MST=ON LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=27.9C H=65.6% | PLT=17% FHS=30% | dT=0.00 | MST=ON LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=27.3C H=66.2% | PLT=47% FHS=60% | dT=9.21 | MST=ON LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=26.8C H=66.5% | PLT=62% FHS=75% | dT=-0.25 | MST=ON LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=25.6C H=67.1% | PLT=75% FHS=90% | dT=-0.48 | MST=ON LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=25.0C H=67.4% | PLT=75% FHS=90% | dT=-0.55 | MST=ON LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=24.0C H=68.0% | PLT=62% FHS=67% | dT=-0.57 | MST=ON LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=23.6C H=68.3% | PLT=58% FHS=60% | dT=-0.53 | MST=ON LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=22.8C H=68.9% | PLT=50% FHS=60% | dT=-0.44 | MST=ON LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=22.4C H=69.2% | PLT=50% FHS=60% | dT=-0.41 | MST=ON LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=21.8C H=69.8% | PLT=38% FHS=55% | dT=-0.37 | MST=ON LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=21.5C H=70.1% | PLT=33% FHS=46% | dT=-0.34 | MST=ON LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=21.2C H=69.7% | PLT=22% FHS=30% | dT=-0.24 | MST=off LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=21.1C H=69.5% | PLT=20% FHS=30% | dT=-0.19 | MST=off LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=20.8C H=69.1% | PLT=17% FHS=30% | dT=-0.13 | MST=off LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=20.7C H=68.9% | PLT=17% FHS=30% | dT=-0.12 | MST=off LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=20.6C H=68.6% | PLT=12% FHS=30% | dT=-0.10 | MST=off LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=20.5C H=68.4% | PLT=8% FHS=30% | dT=-0.09 | MST=off LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=20.5C H=68.1% | PLT=4% FHS=30% | dT=-0.04 | MST=off LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=20.5C H=67.9% | PLT=4% FHS=30% | dT=-0.02 | MST=off LED=off FAN=off | Jam=6 | Mode=M1 Inkubasi]
+[T=20.5C H=67.6% | PLT=4% FHS=30% | dT=-0.00 | MST=off LED=off FAN=off | Jam=7 | Mode=M1 Inkubasi]
+[T=20.5C H=67.5% | PLT=4% FHS=30% | dT=-0.00 | MST=off LED=off FAN=off | Jam=7 | Mode=M1 Inkubasi]
+========================================
+>> MODE : M2a Induksi
+   Suhu : 10.00 – 12.00 C
+   Setpoint: 11.00
+   RH   : 80.00 – 85.00 %
+========================================
+[MODE] -> M2a Induksi
+[T=20.2C H=68.1% | PLT=34% FHS=60% | dT=-0.04 | MST=ON LED=off FAN=off | Jam=7 | Mode=M2a Induksi]
+[T=19.8C H=68.4% | PLT=49% FHS=75% | dT=-0.12 | MST=ON LED=off FAN=off | Jam=7 | Mode=M2a Induksi]
+[T=18.8C H=69.0% | PLT=75% FHS=90% | dT=-0.36 | MST=ON LED=off FAN=off | Jam=7 | Mode=M2a Induksi]
+[T=18.2C H=69.3% | PLT=75% FHS=90% | dT=-0.47 | MST=ON LED=off FAN=off | Jam=7 | Mode=M2a Induksi]
+[T=17.1C H=69.9% | PLT=75% FHS=90% | dT=-0.57 | MST=ON LED=off FAN=off | Jam=7 | Mode=M2a Induksi]
+[T=16.5C H=70.2% | PLT=75% FHS=90% | dT=-0.56 | MST=ON LED=off FAN=off | Jam=7 | Mode=M2a Induksi]
+[T=15.4C H=70.8% | PLT=75% FHS=90% | dT=-0.56 | MST=ON LED=off FAN=off | Jam=7 | Mode=M2a Induksi]
+[T=14.8C H=71.1% | PLT=75% FHS=90% | dT=-0.56 | MST=ON LED=off FAN=off | Jam=7 | Mode=M2a Induksi]
+[T=13.8C H=71.7% | PLT=65% FHS=72% | dT=-0.55 | MST=ON LED=off FAN=off | Jam=7 | Mode=M2a Induksi]
+[T=13.4C H=72.0% | PLT=61% FHS=64% | dT=-0.52 | MST=ON LED=off FAN=off | Jam=7 | Mode=M2a Induksi]
+[T=12.6C H=72.6% | PLT=50% FHS=60% | dT=-0.44 | MST=ON LED=off FAN=off | Jam=7 | Mode=M2a Induksi]
+[T=12.3C H=72.9% | PLT=50% FHS=60% | dT=-0.40 | MST=ON LED=off FAN=off | Jam=7 | Mode=M2a Induksi]
+[T=11.6C H=73.5% | PLT=47% FHS=60% | dT=-0.35 | MST=ON LED=off FAN=off | Jam=7 | Mode=M2a Induksi]
+[T=11.4C H=73.8% | PLT=39% FHS=58% | dT=-0.34 | MST=ON LED=off FAN=off | Jam=7 | Mode=M2a Induksi]
+[T=10.9C H=74.4% | PLT=30% FHS=42% | dT=-0.27 | MST=ON LED=off FAN=off | Jam=7 | Mode=M2a Induksi]
+[T=10.8C H=74.7% | PLT=24% FHS=30% | dT=-0.22 | MST=ON LED=off FAN=off | Jam=7 | Mode=M2a Induksi]
+[T=10.6C H=75.3% | PLT=19% FHS=30% | dT=-0.14 | MST=ON LED=off FAN=off | Jam=7 | Mode=M2a Induksi]
+[T=10.5C H=75.6% | PLT=18% FHS=30% | dT=-0.11 | MST=ON LED=off FAN=off | Jam=7 | Mode=M2a Induksi]
+[T=10.4C H=76.2% | PLT=16% FHS=30% | dT=-0.09 | MST=ON LED=off FAN=off | Jam=8 | Mode=M2a Induksi]
+[T=10.3C H=76.5% | PLT=15% FHS=30% | dT=-0.08 | MST=ON LED=off FAN=off | Jam=8 | Mode=M2a Induksi]
+[T=10.2C H=77.1% | PLT=13% FHS=30% | dT=-0.06 | MST=ON LED=off FAN=off | Jam=8 | Mode=M2a Induksi]
+[T=10.2C H=77.4% | PLT=12% FHS=30% | dT=-0.06 | MST=ON LED=off FAN=off | Jam=8 | Mode=M2a Induksi]
+[T=10.1C H=78.0% | PLT=10% FHS=30% | dT=-0.04 | MST=ON LED=off FAN=off | Jam=8 | Mode=M2a Induksi]
+MQTT...OK sbg enoki-esp32-c40a24
+[MQTT] Subscribe enoki/cmd/mode -> OK
+[T=10.1C H=78.3% | PLT=9% FHS=30% | dT=-0.03 | MST=ON LED=off FAN=off | Jam=8 | Mode=M2a Induksi]
+========================================
+>> MODE : M2b Pemanjangan
+   Suhu : 12.00 – 15.00 C
+   Setpoint: 13.50
+   RH   : 75.00 – 80.00 %
+========================================
+[MODE] -> M2b Pemanjangan
+[T=10.1C H=78.2% | PLT=2% FHS=30% | dT=-0.01 | MST=off LED=off FAN=ON | Jam=8 | Mode=M2b Pemanjangan]
+[T=10.2C H=77.8% | PLT=4% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=8 | Mode=M2b Pemanjangan]
+[T=10.2C H=77.1% | PLT=8% FHS=34% | dT=0.02 | MST=off LED=off FAN=ON | Jam=8 | Mode=M2b Pemanjangan]
+[T=10.2C H=76.8% | PLT=4% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=8 | Mode=M2b Pemanjangan]
+[T=10.2C H=76.1% | PLT=6% FHS=33% | dT=0.02 | MST=off LED=off FAN=ON | Jam=8 | Mode=M2b Pemanjangan]
+[T=10.2C H=75.8% | PLT=7% FHS=33% | dT=0.02 | MST=off LED=off FAN=ON | Jam=8 | Mode=M2b Pemanjangan]
+[T=10.3C H=75.2% | PLT=5% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=8 | Mode=M2b Pemanjangan]
+[T=10.3C H=74.9% | PLT=6% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=8 | Mode=M2b Pemanjangan]
+[T=10.3C H=75.5% | PLT=6% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=8 | Mode=M2b Pemanjangan]
+[T=10.3C H=75.8% | PLT=5% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=8 | Mode=M2b Pemanjangan]
+[T=10.3C H=76.4% | PLT=6% FHS=33% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=8 | Mode=M2b Pemanjangan]
+[T=10.4C H=76.7% | PLT=6% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=8 | Mode=M2b Pemanjangan]
+[T=10.4C H=77.3% | PLT=6% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=8 | Mode=M2b Pemanjangan]
+[T=10.4C H=77.6% | PLT=6% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=8 | Mode=M2b Pemanjangan]
+[T=10.4C H=77.9% | PLT=6% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=9 | Mode=M2b Pemanjangan]
+[T=10.4C H=78.5% | PLT=6% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=9 | Mode=M2b Pemanjangan]
+[T=10.4C H=78.8% | PLT=6% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=9 | Mode=M2b Pemanjangan]
+[T=10.5C H=79.4% | PLT=6% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=9 | Mode=M2b Pemanjangan]
+[T=10.5C H=79.7% | PLT=6% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=9 | Mode=M2b Pemanjangan]
+[T=10.5C H=80.3% | PLT=6% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=9 | Mode=M2b Pemanjangan]
+[T=10.5C H=79.9% | PLT=6% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=9 | Mode=M2b Pemanjangan]
+[T=10.5C H=79.1% | PLT=6% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=9 | Mode=M2b Pemanjangan]
+[T=10.5C H=78.7% | PLT=6% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=9 | Mode=M2b Pemanjangan]
+[T=10.6C H=77.9% | PLT=6% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=9 | Mode=M2b Pemanjangan]
+[T=10.6C H=77.6% | PLT=6% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=9 | Mode=M2b Pemanjangan]
+[T=10.6C H=76.9% | PLT=6% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=9 | Mode=M2b Pemanjangan]
+[T=10.6C H=76.6% | PLT=6% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=9 | Mode=M2b Pemanjangan]
+[T=10.6C H=75.9% | PLT=6% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=9 | Mode=M2b Pemanjangan]
+[T=10.7C H=75.6% | PLT=6% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=9 | Mode=M2b Pemanjangan]
+[T=10.7C H=75.0% | PLT=6% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=9 | Mode=M2b Pemanjangan]
+[T=10.7C H=75.3% | PLT=6% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=9 | Mode=M2b Pemanjangan]
+[T=10.7C H=75.9% | PLT=6% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=9 | Mode=M2b Pemanjangan]
+[T=10.7C H=76.2% | PLT=6% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=9 | Mode=M2b Pemanjangan]
+[T=10.8C H=76.8% | PLT=6% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=9 | Mode=M2b Pemanjangan]
+[T=10.8C H=77.1% | PLT=6% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=10 | Mode=M2b Pemanjangan]
+[T=10.8C H=77.7% | PLT=6% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=10 | Mode=M2b Pemanjangan]
+[T=10.8C H=78.0% | PLT=6% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=10 | Mode=M2b Pemanjangan]
+[T=10.8C H=78.6% | PLT=6% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=10 | Mode=M2b Pemanjangan]
+[T=10.9C H=78.9% | PLT=6% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=10 | Mode=M2b Pemanjangan]
+[T=10.9C H=79.5% | PLT=6% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=10 | Mode=M2b Pemanjangan]
+[T=10.9C H=79.8% | PLT=6% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=10 | Mode=M2b Pemanjangan]
+[T=10.9C H=79.7% | PLT=5% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=10 | Mode=M2b Pemanjangan]
+[T=10.9C H=79.3% | PLT=5% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=10 | Mode=M2b Pemanjangan]
+[T=11.0C H=78.5% | PLT=5% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=10 | Mode=M2b Pemanjangan]
+[T=11.0C H=78.1% | PLT=5% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=10 | Mode=M2b Pemanjangan]
+[T=11.0C H=77.4% | PLT=5% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=10 | Mode=M2b Pemanjangan]
+[T=11.0C H=77.1% | PLT=5% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=10 | Mode=M2b Pemanjangan]
+[T=11.0C H=76.4% | PLT=5% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=10 | Mode=M2b Pemanjangan]
+[T=11.1C H=76.1% | PLT=5% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=10 | Mode=M2b Pemanjangan]
+[T=11.1C H=75.4% | PLT=5% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=10 | Mode=M2b Pemanjangan]
+[T=11.1C H=75.1% | PLT=5% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=10 | Mode=M2b Pemanjangan]
+[T=11.1C H=75.1% | PLT=5% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=10 | Mode=M2b Pemanjangan]
+[T=11.1C H=75.4% | PLT=5% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=10 | Mode=M2b Pemanjangan]
+[T=11.2C H=76.0% | PLT=5% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=10 | Mode=M2b Pemanjangan]
+[T=11.2C H=76.3% | PLT=5% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=11 | Mode=M2b Pemanjangan]
+[T=11.2C H=76.9% | PLT=5% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=11 | Mode=M2b Pemanjangan]
+[T=11.2C H=77.2% | PLT=5% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=11 | Mode=M2b Pemanjangan]
+[T=11.2C H=77.8% | PLT=5% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=11 | Mode=M2b Pemanjangan]
+[T=11.3C H=78.1% | PLT=5% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=11 | Mode=M2b Pemanjangan]
+[T=11.3C H=78.7% | PLT=5% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=11 | Mode=M2b Pemanjangan]
+[T=11.3C H=79.0% | PLT=5% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=11 | Mode=M2b Pemanjangan]
+[INFO] Durasi minimum fase tercapai -> siap dipindah manual.
+[T=11.3C H=79.6% | PLT=5% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=11 | Mode=M2b Pemanjangan]
+[T=11.3C H=79.9% | PLT=5% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=11 | Mode=M2b Pemanjangan]
+[T=11.4C H=79.8% | PLT=5% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=11 | Mode=M2b Pemanjangan]
+[T=11.4C H=79.4% | PLT=5% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=11 | Mode=M2b Pemanjangan]
+[T=11.4C H=78.6% | PLT=5% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=11 | Mode=M2b Pemanjangan]
+[T=11.4C H=78.3% | PLT=5% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=11 | Mode=M2b Pemanjangan]
+[T=11.5C H=77.6% | PLT=5% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=11 | Mode=M2b Pemanjangan]
+[T=11.5C H=77.2% | PLT=5% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=11 | Mode=M2b Pemanjangan]
+[T=11.5C H=76.5% | PLT=5% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=11 | Mode=M2b Pemanjangan]
+[T=11.5C H=76.2% | PLT=5% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=11 | Mode=M2b Pemanjangan]
+[T=11.5C H=75.5% | PLT=5% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=11 | Mode=M2b Pemanjangan]
+[T=11.5C H=75.2% | PLT=5% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=11 | Mode=M2b Pemanjangan]
+[T=11.6C H=75.2% | PLT=5% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=11 | Mode=M2b Pemanjangan]
+[T=11.6C H=75.5% | PLT=5% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=12 | Mode=M2b Pemanjangan]
+[T=11.6C H=76.1% | PLT=5% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=12 | Mode=M2b Pemanjangan]
+[T=11.6C H=76.4% | PLT=5% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=12 | Mode=M2b Pemanjangan]
+[T=11.7C H=77.0% | PLT=5% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=12 | Mode=M2b Pemanjangan]
+[T=11.7C H=77.3% | PLT=5% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=12 | Mode=M2b Pemanjangan]
+[T=11.7C H=77.9% | PLT=5% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=12 | Mode=M2b Pemanjangan]
+[T=11.7C H=78.2% | PLT=5% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=12 | Mode=M2b Pemanjangan]
+[T=11.7C H=78.8% | PLT=5% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=12 | Mode=M2b Pemanjangan]
+[T=11.8C H=79.1% | PLT=5% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=12 | Mode=M2b Pemanjangan]
+[T=11.8C H=79.7% | PLT=5% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=12 | Mode=M2b Pemanjangan]
+[T=11.8C H=80.0% | PLT=5% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=12 | Mode=M2b Pemanjangan]
+[T=11.8C H=79.2% | PLT=5% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=12 | Mode=M2b Pemanjangan]
+[T=11.8C H=78.9% | PLT=5% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=12 | Mode=M2b Pemanjangan]
+[T=11.9C H=78.1% | PLT=5% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=12 | Mode=M2b Pemanjangan]
+[T=11.9C H=77.7% | PLT=5% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=12 | Mode=M2b Pemanjangan]
+[T=11.9C H=77.0% | PLT=5% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=12 | Mode=M2b Pemanjangan]
+[T=11.9C H=76.7% | PLT=5% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=12 | Mode=M2b Pemanjangan]
+[T=11.9C H=76.0% | PLT=5% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=12 | Mode=M2b Pemanjangan]
+[T=12.0C H=75.7% | PLT=5% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=12 | Mode=M2b Pemanjangan]
+[T=12.0C H=75.1% | PLT=5% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=12 | Mode=M2b Pemanjangan]
+[T=12.0C H=74.8% | PLT=5% FHS=32% | dT=0.01 | MST=off LED=off FAN=ON | Jam=13 | Mode=M2b Pemanjangan]
+[T=12.0C H=75.4% | PLT=5% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=13 | Mode=M2b Pemanjangan]
+[T=12.0C H=75.7% | PLT=5% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=13 | Mode=M2b Pemanjangan]
+[T=12.1C H=76.3% | PLT=5% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=13 | Mode=M2b Pemanjangan]
+[T=12.1C H=76.6% | PLT=5% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=13 | Mode=M2b Pemanjangan]
+[T=12.1C H=77.2% | PLT=5% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=13 | Mode=M2b Pemanjangan]
+[T=12.1C H=77.5% | PLT=5% FHS=32% | dT=0.01 | MST=ON LED=off FAN=ON | Jam=13 | Mode=M2b Pemanjangan]
+[AUTO] Durasi maksimum fase tercapai -> pindah otomatis.
+========================================
+>> MODE : M2c Fruiting
+   Suhu : 8.00 – 12.00 C
+   Setpoint: 10.00
+   RH   : 80.00 – 90.00 %
+========================================
+[MODE] -> M2c Fruiting
+[T=12.0C H=77.4% | PLT=20% FHS=47% | dT=0.01 | MST=ON LED=ON FAN=off | Jam=13 | Mode=M2c Fruiting]
+[T=11.8C H=77.7% | PLT=35% FHS=62% | dT=-0.03 | MST=ON LED=ON FAN=off | Jam=13 | Mode=M2c Fruiting]
+[T=11.1C H=78.3% | PLT=50% FHS=61% | dT=-0.23 | MST=ON LED=ON FAN=off | Jam=13 | Mode=M2c Fruiting]
+[T=10.8C H=78.6% | PLT=50% FHS=60% | dT=-0.31 | MST=ON LED=ON FAN=off | Jam=13 | Mode=M2c Fruiting]
+[T=10.2C H=79.2% | PLT=37% FHS=52% | dT=-0.32 | MST=ON LED=ON FAN=off | Jam=13 | Mode=M2c Fruiting]
+[T=10.0C H=79.5% | PLT=33% FHS=45% | dT=-0.29 | MST=ON LED=ON FAN=off | Jam=13 | Mode=M2c Fruiting]
+[T=9.8C H=80.1% | PLT=22% FHS=30% | dT=-0.20 | MST=ON LED=ON FAN=off | Jam=13 | Mode=M2c Fruiting]
+[T=9.7C H=80.4% | PLT=20% FHS=30% | dT=-0.16 | MST=ON LED=ON FAN=off | Jam=13 | Mode=M2c Fruiting]
+[T=9.5C H=81.0% | PLT=18% FHS=30% | dT=-0.10 | MST=ON LED=ON FAN=off | Jam=13 | Mode=M2c Fruiting]
+[T=9.4C H=81.3% | PLT=17% FHS=30% | dT=-0.09 | MST=ON LED=ON FAN=off | Jam=13 | Mode=M2c Fruiting]
+[T=9.3C H=81.9% | PLT=15% FHS=30% | dT=-0.08 | MST=ON LED=ON FAN=off | Jam=13 | Mode=M2c Fruiting]
+[T=9.2C H=82.2% | PLT=14% FHS=30% | dT=-0.07 | MST=ON LED=ON FAN=off | Jam=13 | Mode=M2c Fruiting]
+[T=9.2C H=82.8% | PLT=12% FHS=30% | dT=-0.05 | MST=ON LED=ON FAN=off | Jam=13 | Mode=M2c Fruiting]
+[T=9.1C H=83.1% | PLT=11% FHS=30% | dT=-0.04 | MST=ON LED=ON FAN=off | Jam=14 | Mode=M2c Fruiting]
+[T=9.1C H=83.7% | PLT=9% FHS=30% | dT=-0.02 | MST=ON LED=ON FAN=off | Jam=14 | Mode=M2c Fruiting]
+[T=9.1C H=84.0% | PLT=9% FHS=30% | dT=-0.02 | MST=ON LED=ON FAN=off | Jam=14 | Mode=M2c Fruiting]
+[T=9.1C H=84.6% | PLT=8% FHS=30% | dT=-0.01 | MST=ON LED=ON FAN=off | Jam=14 | Mode=M2c Fruiting]
+[T=9.1C H=84.9% | PLT=8% FHS=30% | dT=-0.01 | MST=ON LED=ON FAN=off | Jam=14 | Mode=M2c Fruiting]
+[T=9.1C H=85.5% | PLT=8% FHS=30% | dT=-0.00 | MST=ON LED=ON FAN=off | Jam=14 | Mode=M2c Fruiting]
+[T=9.1C H=85.8% | PLT=8% FHS=30% | dT=-0.00 | MST=ON LED=ON FAN=off | Jam=14 | Mode=M2c Fruiting]
+[T=9.1C H=86.4% | PLT=8% FHS=30% | dT=-0.00 | MST=ON LED=ON FAN=off | Jam=14 | Mode=M2c Fruiting]
+[T=9.1C H=86.7% | PLT=8% FHS=30% | dT=-0.00 | MST=ON LED=ON FAN=off | Jam=14 | Mode=M2c Fruiting]
+[T=9.1C H=87.3% | PLT=8% FHS=30% | dT=-0.00 | MST=ON LED=ON FAN=off | Jam=14 | Mode=M2c Fruiting]
+[T=9.1C H=87.6% | PLT=8% FHS=30% | dT=-0.00 | MST=ON LED=ON FAN=off | Jam=14 | Mode=M2c Fruiting]
+[T=9.1C H=88.2% | PLT=8% FHS=30% | dT=-0.00 | MST=ON LED=ON FAN=off | Jam=14 | Mode=M2c Fruiting]
+[T=9.1C H=88.5% | PLT=8% FHS=30% | dT=-0.00 | MST=ON LED=ON FAN=off | Jam=14 | Mode=M2c Fruiting]
+[T=9.1C H=89.1% | PLT=8% FHS=30% | dT=-0.00 | MST=ON LED=ON FAN=off | Jam=14 | Mode=M2c Fruiting]
+[T=9.1C H=89.4% | PLT=8% FHS=30% | dT=-0.00 | MST=ON LED=ON FAN=off | Jam=14 | Mode=M2c Fruiting]
+[T=9.1C H=90.0% | PLT=8% FHS=30% | dT=-0.00 | MST=ON LED=ON FAN=off | Jam=14 | Mode=M2c Fruiting]
+[T=9.1C H=89.4% | PLT=8% FHS=30% | dT=-0.00 | MST=off LED=ON FAN=off | Jam=14 | Mode=M2c Fruiting]
+[T=9.1C H=88.3% | PLT=8% FHS=30% | dT=0.00 | MST=off LED=ON FAN=off | Jam=14 | Mode=M2c Fruiting]
+[T=9.1C H=87.7% | PLT=8% FHS=30% | dT=0.00 | MST=off LED=ON FAN=off | Jam=14 | Mode=M2c Fruiting]
+[T=9.1C H=86.6% | PLT=8% FHS=30% | dT=0.00 | MST=off LED=ON FAN=off | Jam=14 | Mode=M2c Fruiting]
+[T=9.1C H=86.1% | PLT=8% FHS=30% | dT=0.00 | MST=off LED=ON FAN=off | Jam=15 | Mode=M2c Fruiting]
+[T=9.1C H=85.1% | PLT=8% FHS=30% | dT=0.00 | MST=off LED=ON FAN=off | Jam=15 | Mode=M2c Fruiting]
+[T=9.1C H=84.5% | PLT=8% FHS=30% | dT=0.00 | MST=off LED=ON FAN=off | Jam=15 | Mode=M2c Fruiting]
+[T=9.1C H=83.6% | PLT=8% FHS=30% | dT=0.00 | MST=off LED=ON FAN=off | Jam=15 | Mode=M2c Fruiting]
+[T=9.1C H=83.1% | PLT=8% FHS=30% | dT=0.00 | MST=off LED=ON FAN=off | Jam=15 | Mode=M2c Fruiting]
+[T=9.1C H=82.2% | PLT=8% FHS=30% | dT=0.00 | MST=off LED=ON FAN=off | Jam=15 | Mode=M2c Fruiting]
+[T=9.1C H=81.7% | PLT=8% FHS=30% | dT=0.00 | MST=off LED=ON FAN=off | Jam=15 | Mode=M2c Fruiting]
+[T=9.1C H=80.9% | PLT=8% FHS=30% | dT=0.00 | MST=off LED=ON FAN=off | Jam=15 | Mode=M2c Fruiting]
+[T=9.1C H=80.5% | PLT=8% FHS=30% | dT=0.00 | MST=off LED=ON FAN=off | Jam=15 | Mode=M2c Fruiting]
+[T=9.1C H=79.7% | PLT=8% FHS=30% | dT=0.00 | MST=off LED=ON FAN=off | Jam=15 | Mode=M2c Fruiting]
+[T=9.1C H=80.0% | PLT=8% FHS=30% | dT=0.00 | MST=ON LED=ON FAN=off | Jam=15 | Mode=M2c Fruiting]
+[T=9.1C H=80.6% | PLT=8% FHS=30% | dT=0.00 | MST=ON LED=ON FAN=off | Jam=15 | Mode=M2c Fruiting]
+[T=9.1C H=80.9% | PLT=8% FHS=30% | dT=0.00 | MST=ON LED=ON FAN=off | Jam=15 | Mode=M2c Fruiting]
+[T=9.1C H=81.5% | PLT=8% FHS=30% | dT=0.00 | MST=ON LED=ON FAN=off | Jam=15 | Mode=M2c Fruiting]
+[T=9.1C H=81.8% | PLT=8% FHS=30% | dT=0.00 | MST=ON LED=ON FAN=off | Jam=15 | Mode=M2c Fruiting]
+[T=9.1C H=82.4% | PLT=8% FHS=30% | dT=0.00 | MST=ON LED=ON FAN=off | Jam=15 | Mode=M2c Fruiting]
+[T=9.1C H=82.7% | PLT=8% FHS=30% | dT=0.00 | MST=ON LED=ON FAN=off | Jam=15 | Mode=M2c Fruiting]
+[T=9.1C H=83.3% | PLT=8% FHS=30% | dT=0.00 | MST=ON LED=ON FAN=off | Jam=15 | Mode=M2c Fruiting]
+[T=9.1C H=83.6% | PLT=8% FHS=30% | dT=0.00 | MST=ON LED=ON FAN=off | Jam=15 | Mode=M2c Fruiting]
+[T=9.1C H=84.2% | PLT=8% FHS=30% | dT=0.00 | MST=ON LED=ON FAN=off | Jam=15 | Mode=M2c Fruiting]
+[T=9.1C H=84.5% | PLT=8% FHS=30% | dT=0.00 | MST=ON LED=ON FAN=off | Jam=16 | Mode=M2c Fruiting]
+[T=9.1C H=85.1% | PLT=8% FHS=30% | dT=0.00 | MST=ON LED=ON FAN=off | Jam=16 | Mode=M2c Fruiting]
+[T=9.1C H=85.4% | PLT=8% FHS=30% | dT=0.00 | MST=ON LED=ON FAN=off | Jam=16 | Mode=M2c Fruiting]
+[T=9.1C H=86.0% | PLT=8% FHS=30% | dT=0.00 | MST=ON LED=ON FAN=off | Jam=16 | Mode=M2c Fruiting]
+[T=9.1C H=86.3% | PLT=8% FHS=30% | dT=0.00 | MST=ON LED=ON FAN=off | Jam=16 | Mode=M2c Fruiting]
+[T=9.1C H=86.9% | PLT=8% FHS=30% | dT=0.00 | MST=ON LED=ON FAN=off | Jam=16 | Mode=M2c Fruiting]
+[T=9.1C H=87.2% | PLT=8% FHS=30% | dT=0.00 | MST=ON LED=ON FAN=off | Jam=16 | Mode=M2c Fruiting]
+[T=9.1C H=87.8% | PLT=8% FHS=30% | dT=0.00 | MST=ON LED=ON FAN=off | Jam=16 | Mode=M2c Fruiting]
+[T=9.1C H=88.1% | PLT=8% FHS=30% | dT=0.00 | MST=ON LED=ON FAN=off | Jam=16 | Mode=M2c Fruiting]
+[T=9.1C H=88.7% | PLT=8% FHS=30% | dT=0.00 | MST=ON LED=ON FAN=off | Jam=16 | Mode=M2c Fruiting]
+[T=9.1C H=89.0% | PLT=8% FHS=30% | dT=0.00 | MST=ON LED=ON FAN=off | Jam=16 | Mode=M2c Fruiting]
+[T=9.1C H=89.6% | PLT=8% FHS=30% | dT=0.00 | MST=ON LED=ON FAN=off | Jam=16 | Mode=M2c Fruiting]
+[T=9.1C H=89.9% | PLT=8% FHS=30% | dT=0.00 | MST=ON LED=ON FAN=off | Jam=16 | Mode=M2c Fruiting]
+[T=9.1C H=89.6% | PLT=8% FHS=30% | dT=0.00 | MST=off LED=ON FAN=off | Jam=16 | Mode=M2c Fruiting]
+[T=9.1C H=89.0% | PLT=8% FHS=30% | dT=0.00 | MST=off LED=ON FAN=off | Jam=16 | Mode=M2c Fruiting]
+[T=9.1C H=87.8% | PLT=8% FHS=30% | dT=0.00 | MST=off LED=ON FAN=off | Jam=16 | Mode=M2c Fruiting]
+[T=9.1C H=87.3% | PLT=8% FHS=30% | dT=0.00 | MST=off LED=ON FAN=off | Jam=16 | Mode=M2c Fruiting]
+[T=9.1C H=86.2% | PLT=8% FHS=30% | dT=0.00 | MST=off LED=ON FAN=off | Jam=16 | Mode=M2c Fruiting]
+[T=9.1C H=85.7% | PLT=8% FHS=30% | dT=0.00 | MST=off LED=ON FAN=off | Jam=16 | Mode=M2c Fruiting]
+[T=9.1C H=84.6% | PLT=8% FHS=30% | dT=0.00 | MST=off LED=ON FAN=off | Jam=16 | Mode=M2c Fruiting]
+[T=9.1C H=84.1% | PLT=8% FHS=30% | dT=0.00 | MST=off LED=ON FAN=off | Jam=17 | Mode=M2c Fruiting]
+[T=9.1C H=83.2% | PLT=8% FHS=30% | dT=0.00 | MST=off LED=ON FAN=off | Jam=17 | Mode=M2c Fruiting]
+[T=9.1C H=82.7% | PLT=8% FHS=30% | dT=0.00 | MST=off LED=ON FAN=off | Jam=17 | Mode=M2c Fruiting]
+[T=9.1C H=81.8% | PLT=8% FHS=30% | dT=0.00 | MST=off LED=ON FAN=off | Jam=17 | Mode=M2c Fruiting]
+[T=9.1C H=81.4% | PLT=8% FHS=30% | dT=0.00 | MST=off LED=ON FAN=off | Jam=17 | Mode=M2c Fruiting]
+[T=9.1C H=80.5% | PLT=8% FHS=30% | dT=0.00 | MST=off LED=ON FAN=off | Jam=17 | Mode=M2c Fruiting]
+[T=9.1C H=80.1% | PLT=8% FHS=30% | dT=0.00 | MST=off LED=ON FAN=off | Jam=17 | Mode=M2c Fruiting]
+[T=9.1C H=80.0% | PLT=8% FHS=30% | dT=0.00 | MST=ON LED=ON FAN=off | Jam=17 | Mode=M2c Fruiting]
